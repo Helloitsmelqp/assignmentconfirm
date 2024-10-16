@@ -17,16 +17,11 @@ use App\Http\Controllers\LanguageController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+
 Route::get('/language', [LanguageController::class, 'showForm'])
 ->name('language.form');
 Route::post('/language', [LanguageController::class, 'savePreferences'])
 ->name('language.save');
-
-
-
-/*
-
 Route::get('/', function () {
     return view('welcome');
 });
